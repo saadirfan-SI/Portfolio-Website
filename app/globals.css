@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"); /* Importing Google Fonts */
+@tailwind base; /* Importing Tailwind CSS base styles */
+@tailwind components; /* Importing Tailwind CSS components */
+@tailwind utilities; /* Importing Tailwind CSS utilities */
+
+.cursive {
+  font-family: "Cedarville Cursive", cursive; /* Setting font family for elements with class 'cursive' */
+}
+
+.Welcome-text {
+  background: linear-gradient( /* Creating linear gradient background */
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%); /* Gradient colors */
+  background-blend-mode: normal, screen; /* Blending mode for background */
+  -webkit-background-clip: text; /* Clip text to background */
+  background-clip: text; /* Clip text to background */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+.Welcome-box {
+  isolation: isolate; /* Create a new stacking context */
+  overflow: hidden; /* Hide overflow content */
+  align-items: center; /* Align items vertically */
+  -webkit-backdrop-filter: blur(6px); /* Apply backdrop filter */
+  backdrop-filter: blur(6px); /* Apply backdrop filter */
+  border-radius: 32px; /* Set border radius */
+  box-shadow: inset 0 -7px 11px #a48fff1f; /* Apply box shadow */
+  display: flex; /* Display as flexbox */
+  position: relative; /* Set position relative */
+  width: -moz-max-content; /* Set width for Firefox */
+  width: max-content; /* Set max content width */
+  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow; /* Transition effect */
+}
+
+.button-primary {
+  background: linear-gradient( /* Creating linear gradient background */
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
+    ),
+    rgba(113, 47, 255, 0.12); /* Gradient colors */
+  box-shadow: inset 0 0 12px #bf97ff3d; /* Apply box shadow */
+}
+
+.button-primary:hover {
+  background: linear-gradient( /* Creating linear gradient background */
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
+    ),
+    rgba(113, 47, 255, 0.24); /* Gradient colors */
+  box-shadow: inset 0 0 12px #bf97ff70; /* Apply box shadow */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
